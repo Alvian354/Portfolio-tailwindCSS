@@ -20,9 +20,9 @@ hamburger.addEventListener("click", function () {
 });
 
 //klik diluar hamburger
-window.addEventListener('click', function (e) {
+window.addEventListener("click", function (e) {
   if (e.target != hamburger && e.target != navMenu) {
     hamburger.classList.remove("hamburger-active");
-    navMenu.classList.toggle("hidden");
+    navMenu.classList.add("hidden");
   }
 });
